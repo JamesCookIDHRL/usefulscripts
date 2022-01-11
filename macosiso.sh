@@ -24,7 +24,7 @@ removeTemporaryFile () {
 if [ -f "${LOCATION}"/Contents/Resources/createinstallmedia ]; then
 	# createinstallmedia command is present
 	echo "Creating temporary file"
-	hdiutil create -o /tmp/"${VERSION_NAME}" -size 13G -layout SPUD -fs HFS+J -type SPARSE
+	hdiutil create -o /tmp/"${VERSION_NAME}" -size 14G -layout SPUD -fs HFS+J -type SPARSE
 	if [ $? -ne 0 ]; then
 		echo "Creating sparsebundle failed"
 		exit 1
